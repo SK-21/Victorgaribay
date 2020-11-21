@@ -1,0 +1,180 @@
+/* =======GOOGLE FONTS=======*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+
+
+@media screen and (min-width:768px){
+    :root{
+        --big-font-size:10.5rem;
+        --h2-font-size:2rem;
+        --normal-font-size:1rem;
+        --small-font-size:.875rem;
+    }
+}
+
+
+/* ======= ====== ====== class css ====== ======= ======= */
+ul{
+    margin:0;
+    padding:0;
+    list-style:none ;
+}
+a{
+    text-decoration: none;
+    color:#697477;
+
+}
+.section{
+    padding:3rem 0;
+}
+.p-header{
+    position: relative;
+    font-size:1.25rem;
+    color:#2a3b47;
+    margin:2rem 0;
+    text-align:center;
+}
+.p-header::after{
+    position: absolute;
+    content: "";
+    left:0;
+    right:0;
+    margin:auto;
+    top:2rem;
+
+}
+/* ======= ====== ====== layout ====== ======= ======= */
+.bd-grid{
+  max-width: 1024px;
+  display:grid;
+  grid-template-columns: 100%;
+  grid-column-gap:2rem;
+  width:calc(100% - 2rem);
+  margin-left: 1rem ;
+  margin-right: 1rem ;
+}
+.l-header{
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    background-color: #fff;
+}
+/* ======= ====== ====== nav ====== ======= ======= */
+.nav{
+    height:3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:768px){
+.nav_menu{
+    position: fixed;
+    top:3rem;
+    right:-100%;
+    width:80%;
+    height: 100%;
+    padding:2rem;
+    background-color: rbga(255,255,255,.3);
+    transition: .5s;
+   /* background-fliter:blur(10px);*/
+
+  }
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .nav_menu {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);  
+    }
+   
+  }
+}
+
+.nav_item{
+    margin-bottom:2rem;
+}
+.nav_link{
+    position: relative;
+    color:#000;
+font-weight:600;
+font-size:16px;
+}
+.nav_link:hover{
+    color:#fff;
+}
+.nav_logo{
+    color:#000;;
+}
+.nav_toggle{
+    color:#000;;
+    font-size:1.5rem;
+    cursor:pointer;
+}
+/* ======= ====== ====== show menu ====== ======= ======= */
+.show{
+    right:0;
+}
+/* ======= ====== ====== active menu ====== ======= ======= */
+.active::after{
+    position: absolute;
+    content: "";
+    width:100%;
+    height:.18rem;
+    left:0;
+    top:1.5rem;
+    background-color: #000;
+}
+
+
+/* ======= ====== ====== media queries ====== ======= ======= */
+
+@media screen and (min-width:768px){
+    body{
+        margin:0;
+    }
+    .section{
+        padding-top: 4rem;
+    }
+    .p-header{
+        margin-bottom: 3rem;
+    }
+    .p-header::after{
+        width:64px;
+        top:3rem;
+    }
+
+    .nav{
+        height:calc(3rem + 1rem);
+    }
+    .nav-list{
+        display:flex;
+    }
+    .nav_item{
+        margin-left:2rem;
+        margin-bottom:0;
+    }
+    .nav_toggle{
+        display:none;
+    }
+    .nav_link{
+        color:#000;;
+    }
+    .nav_link:hover{
+        color:#2a3b47;
+    }
+    .active::after{
+        background-color: #000;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:1024px){
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+}
