@@ -12,9 +12,7 @@
 13)  CURSOR
 14)  MEDIA QUERIES (FOR SMALL DEVICES)
 
-/*---------------------------------------------------*/
-/*	01)  BASE
-/*---------------------------------------------------*/
+/*= = = = = = = = = = = = = = = 01)  BASE= = = = = = = = = = = = = = = */
 
 html {
 	overflow-x: hidden;
@@ -124,9 +122,8 @@ img.svg{
 .preloader.loaded:before, 
 .preloader.loaded:after{height: 0%;}
 
-/*---------------------------------------------------*/
-/*	04)  HERO
-/*---------------------------------------------------*/
+/*= = = = = = = = = = = = = = = 	04)  HERO
+= = = = = = = = = = = = = = = */
 
 .hero{
 	width: 100%;
@@ -263,7 +260,6 @@ img.svg{
     height: 50%;
     display: block;
     top: 0;
-	
     -webkit-animation: scroll-down 2s ease-in-out infinite;
     -ms-animation: scroll-down 2s ease-in-out infinite;
     animation: scroll-down 2s ease-in-out infinite;;
@@ -291,9 +287,7 @@ img.svg{
 	background-color: #fff;
 }
 
-/*---------------------------------------------------*/
-/*	05)  ABOUT
-/*---------------------------------------------------*/
+/*= = = = = = = = = = = = = = = 5) ABOUT = = = = = = = = = = = = = = = */
 
 .about{
 	width: 100%;
@@ -398,9 +392,8 @@ img.svg{
 .btn[data-position="right"]{text-align: right;}
 
 /*
-/*---------------------------------------------------*/
-/*	07)  gallery
-/*---------------------------------------------------*/
+/*= = = = = = = = = = = = = = = 	07)  gallery
+= = = = = = = = = = = = = = = */
 
 .gallery{
 	width: 100%;
@@ -458,9 +451,7 @@ img.svg{
 	z-index:-3;
 }
 
-/*---------------------------------------------------*/
-/*	10)  NEWS
-/*---------------------------------------------------*/
+/*= = = = = = = = = = = = = = = 10)  NEWS = = = = = = = = = = = = = = = */
 
 .news{
 	width: 100%;
@@ -573,9 +564,7 @@ img.svg{
 }
 .button a:hover:before{width: 35px;}
 
-/*---------------------------------------------------*/
-/*	11)  CONTACT
-/*---------------------------------------------------*/
+/*= = = = = = = = = = = = = = = 11)  CONTACT= = = = = = = = = = = = = = = */
 
 .contact{
 	width: 100%;
@@ -660,9 +649,7 @@ img.svg{
 	
 }
 
-/*---------------------------------------------------*/
-/*	12)  COPYRIGHT
-/*---------------------------------------------------*/
+/*= = = = = = = = = = = = = = = 12)  COPYRIGHT = = = = = = = = = = = = = = = */
 
 .copyright{
 	width: 100%;
@@ -687,7 +674,7 @@ img.svg{
 }
 .copyright .copyright_inner > ul > li{
 	margin: 0px 0px 30px 0px;
-	width: 25%;
+	width: 100%;
 	float: left;
 	padding-left: 30px;
 }
@@ -706,6 +693,7 @@ img.svg{
 	list-style-type: none;
 	position: relative;
 	top: 4px;
+	font-size:1.2rem;
 }
 .copyright .copyright_inner .social ul li{
 	margin: 0px 20px 0px 0px;
@@ -734,259 +722,7 @@ img.svg{
 	background-color: transparent;
 }
 
-/*---------------------------------------------------*/
-/*   SETTINGS
-/*---------------------------------------------------*/
-
-.settings{
-	position: fixed;
-	z-index: 200;
-	top: 15%;
-	right: -200px;
-	width: 200px;
-	background-color: rgba(0,0,0,1.00);
-	padding: 40px 20px 33px 30px;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.settings.opened{
-	right: 0px;
-}
-.settings .wrapper{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.settings .icon{
-	position: absolute;
-	top: 0px;
-	right: 100%;
-	background-color: #000;
-	padding: 12px 12px 4px 12px;
-}
-.settings .icon .svg{
-	color: #fff;
-	width: 25px;
-	height: 25px;
-	animation: fa-spin 2s infinite linear;
-}
-.settings .link{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: 1;
-}
-
-@-webkit-keyframes fa-spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
-}
-@keyframes fa-spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
-}
-.settings .title{
-	color: #fff;
-	font-family: "Montserrat";
-	font-weight: 600;
-	position: relative;
-	display: inline-block;
-}
-.settings .title:before{
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 1px;
-	background-color: rgba(255,255,255,.2);
-	left: 0px;
-	bottom: 0px;
-}
-.settings .colors{
-	margin: 0px 0px 22px 0px;
-	list-style-type: none;
-	padding-top: 32px;
-}
-.settings .colors li{
-	margin: 0px;
-	display: inline-block;
-}
-.settings .colors li a{
-	text-decoration: none;
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	border-radius: 100%;
-}
-.settings .direction{
-	list-style-type: none;
-	margin:  0px;
-}
-.settings .direction li{
-	margin: 0px 20px 0px 0px;
-	display: inline-block;
-}
-.settings .direction li a{
-	opacity: .4;
-	text-decoration: none;
-	color: #fff; 
-}
-.settings .direction li a.active{
-	opacity: 1;
-}
-.settings .direction li .svg{
-	width: 25px;
-	height: 25px;
-}
-.settings .colors li.bl{
-	display: inline-block;
-}
-.settings .colors li.wh{
-	display: none;
-}
-body.dark .settings .colors li.bl,
-.settings.changed .colors li.bl{
-	display: none;
-}
-body.dark .settings .colors li.wh,
-.settings.changed .colors li.wh{
-	display: inline-block;
-}
-body.dark .settings,
-.settings.changed{
-	background-color: #fff;
-}
-body.dark .settings .icon,
-.settings.changed .icon{
-	background-color: #fff;
-}
-body.dark .settings .icon .svg,
-.settings.changed .icon .svg{
-	color: #000;
-}
-body.dark .settings .title,
-.settings.changed .title{
-	color: #000;
-}
-body.dark .settings .title:before,
-.settings.changed .title:before{
-	background-color: rgba(0,0,0,.5);
-}
-body.dark .settings .direction li a,
-.settings.changed .direction li a{
-	color: #000;
-}
-body.dark .settings .cursor li:nth-child(1) a,
-.settings.changed .cursor li:nth-child(1) a{
-	border-color: #000;
-}
-body.dark .settings .cursor li:nth-child(1) a:before,
-.settings.changed .cursor li:nth-child(1) a:before{
-	background-color: #000;
-}
-body.dark .settings .cursor li .svg,
-.settings.changed .cursor li .svg{
-	color: #000;
-}
-.settings .cursor{
-	margin: 0px;
-	list-style-type: none;
-	padding-top: 15px;
-}
-.settings .cursor li{
-	margin: 0px 20px 0px 0px;
-	display: inline-block;
-}
-.settings .cursor li a{
-	text-decoration: none;
-	color: #fff;
-	opacity: .4;
-	font-weight: 600;
-}
-.settings .cursor li a.showme{
-	opacity: 1;
-}
-.settings .cursor li:nth-child(1) a{
-	width: 30px;
-	height: 30px;
-	border-radius: 100%;
-	border: 2px solid #fff;
-	position: relative;
-	display: inline-block;
-}
-.settings .cursor li:nth-child(1) a:before{
-	position: absolute;
-	content: "";
-	width: 4px;
-	height: 4px;
-	border-radius: 100%;
-	background-color: #fff;
-	transform: translate(-50%,-50%);
-	left: 50%;
-	top: 50%;
-}
-.settings .cursor li .svg{
-	width: 25px;
-	height: 25px;
-	color: #fff;
-}
-.settings .cursor li:nth-child(2){
-	position: relative;
-	top: -2px;
-}
-.settings .effect{
-	margin: 0px;
-	list-style-type: none;
-	padding-top: 15px;
-	padding-bottom: 25px;
-}
-.settings .effect li{
-	margin: 0px 0px 5px 0px;
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-	border-radius: 100%;
-	background-color: #fff;
-	opacity: .4;
-}
-.settings .effect li a{
-	text-decoration: none;
-	color: #000;
-	font-size: 13px;
-	font-weight: 600;
-	font-family: "Montserrat";
-	display: block;
-	position: relative;
-	top: 2px;
-}
-.settings .effect li.selected{
-	background-color: #fff;
-	opacity: 1;
-}
-
-/*---------------------------------------------------*/
-/*	13)  CURSOR
-/*---------------------------------------------------*
+/*= = = = = = = = = = = = = = = 13)  CURSOR= = = = = = = = = = = = = = = */
 
 .mouse-cursor{
   position: fixed;
@@ -1040,9 +776,7 @@ body.dark .settings .cursor li .svg,
 	z-index: -1111;
 }
 
-/*---------------------------------------------------*/
-/*	14)  MEDIA QUERIES (FOR SMALL DEVICES)
-/*---------------------------------------------------*/
+/*= = = = = = = = = = = = = = = 14)  MEDIA QUERIES = = = = = = = = = = = = = = = */
 
 @media (max-width: 1200px) {
 	.hero .background .leftpart{width: 0%;}
@@ -1052,9 +786,6 @@ body.dark .settings .cursor li .svg,
 
 @media (max-width: 1040px) {
 	.topbar{display: none;}
-	.topbar_single{display: none;}
-	.mobile_menu{display: block;}
-	.mobile_menu_single{display: block;}
 	.hero .content_inner h3{font-size: 60px;}
 	.section-title .title h3 .bg{display: none;}
 	.about .name h3 .bg{display: none;}
@@ -1064,13 +795,6 @@ body.dark .settings .cursor li .svg,
 	.about .about_inner .right{width: 100%;padding-left: 0px;}
 	.section-title{display: block;}
 	.gallery .gallery_filter{display: block;}
-	.gallery .gallery_filter .wrapper{display: none;}
-	.gallery .gallery_filter ul li{left: 0px;opacity: 1;visibility: visible;}
-	.gallery .gallery_filter ul{padding-right: 0px;padding-top: 40px;}
-	.gallery .gallery_inner{padding-top: 30px;}
-	.gallery .gallery_inner ul{margin-left: -40px;}
-	.gallery .gallery_inner ul li{width: 50%;padding-left: 40px;margin-bottom: 30px;}
-
 	.news .news-detail ul{margin-left: -40px;}
 	.news .news-detail ul li{width: 50%;padding-left: 40px;margin-bottom: 40px;}
 	.contact .contact_inner .wrapper{flex-direction: column;align-items: baseline;}
@@ -1098,13 +822,15 @@ body.dark .settings .cursor li .svg,
 	.news .news-detail ul{margin-left: 0px;}
 	.news .news-detail ul li{width: 100%;padding-left: 0px;}
 	.news .news-detail{padding-top: 60px;}
+	.copyright .copyright_inner > ul{
+		margin: 0px 0px 0px 36%;
+		
+	}
 }
 
 
 
-/*---------------------------------------------------*/
-/*	08)  PARTNERS
-/*---------------------------------------------------*/
+/*= = = = = = = = = = = = = = = 08)FEATURED = = = = = = = = = = = = = = = */
 
 .featured{
 	width: 100%;
@@ -1176,13 +902,26 @@ body.dark .featured ul.dark{display: none;}
 		max-width:100%;
 		height:auto;
 	}	
+
+
+	.featured ul li .list_inner{
+
+		opacity: 0.9!important;
+		
+	}
+	.featured ul li .list_inner:hover{
+		opacity: 1;
+	}
+	
 }
+
+
 .featured ul li .list_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
-	opacity: .7;
+	opacity: .6;
 	
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
@@ -1197,7 +936,7 @@ body.dark .featured ul.dark{display: none;}
 
 
 
-/*gallery marquee*/
+/* = = = = = = = = = = = = = = = gallery marquee = = = = = = = = = = = = = = = */
 
 
 .orb {
@@ -1223,13 +962,6 @@ body.dark .featured ul.dark{display: none;}
     -o-transition: .4s;
 }
 
-.red {background:red;}
-.yellow {background:yellow;}
-.blue {background:blue;}
-.orange {background:orange;}
-.purple {background:purple;}
-.green {background:green;}
-
 .marquee {
     height: auto;
     width: 130%;
@@ -1241,7 +973,7 @@ body.dark .featured ul.dark{display: none;}
 }
 @media screen and (max-width: 600px) {
     .marquee {
-        width: 300%;}
+        width: 320%;}
     
 }
 
@@ -1258,10 +990,6 @@ body.dark .featured ul.dark{display: none;}
     animation-play-state: paused;
 }
 
-/*.half {
-  float: left;
-  width: 10%;
-}*/
 .over{
     overflow: hidden;
     margin-right: 0px;
