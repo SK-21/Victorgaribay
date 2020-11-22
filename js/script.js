@@ -112,149 +112,7 @@ jQuery(document).ready(function(){
 
 	}
 	cursor_switcher();
-	
-	// -------------------------------------------------
-	// -------------  SLIDER KENBURN  ------------------
-	// -------------------------------------------------
 
-	function kenburn_slider(){
-
-		jQuery(function() {
-			jQuery('.hero .overlay_slider').vegas({
-			timer:false,	
-			animation: [ 'kenburnsUp',  'kenburnsLeft', 'kenburnsRight'],
-			delay:7000,
-
-			slides: [
-				{ src: 'img/slider/1.jpg' },
-				{ src: 'img/slider/2.jpg' },
-				{ src: 'img/slider/3.jpg' },
-			]
-
-		});
-	});
-
-	}
-	kenburn_slider();
-	
-	// -------------------------------------------------
-	// -------------------  ANCHOR ---------------------
-	// -------------------------------------------------
-
-/*	function anchor(){
-
-		jQuery('.topbar .menu .links ul li a,.mobile_menu .dropdown .dropdown_inner ul li a').off().on('click',function(e){
-			e.stopPropagation();
-			var element = jQuery(this);
-			var url			= element.attr('href');
-			if(url !== '#' && url.charAt(0) === '#'){
-				$('html, body').animate({
-					scrollTop: $(url).offset().top-60
-				}, 1000);
-			}
-			return false;
-		});
-	}
-	anchor();
-	*/
-	// -------------------------------------------------
-	// -------------------  FILTER OPENER --------------
-	// -------------------------------------------------
-
-	function filter_opener(){
-
-		var button	= jQuery('.gallery .gallery-filter .wrapper a');
-		var list	= jQuery('.gallery .gallery-filter ul li');
-
-		button.on('click',function(){
-			var element = jQuery(this);
-			if(element.hasClass('opened')){
-				element.removeClass('opened');
-				list.removeClass('opened');
-			}else{
-				element.addClass('opened');
-				list.each(function(i){
-					var ele = jQuery(this);
-					setTimeout(function(){ele.addClass('opened');},i*100);
-				});
-			}
-			return false;
-		});
-	}
-	filter_opener();
-	
-	// -----------------------------------------------------
-	// --------------------    JARALLAX    -----------------
-	// -----------------------------------------------------
-
-	function jarallax(){
-
-		jQuery('.jarallax').each(function(){
-			var element			= jQuery(this);
-			var	customSpeed		= element.data('speed');
-
-			if(customSpeed !== "undefined" && customSpeed !== ""){
-				customSpeed = customSpeed;
-			}else{
-				customSpeed 	= 0.5;
-			}
-
-			element.jarallax({
-				speed: customSpeed,
-				automaticResize: true
-			});
-		});
-	}
-	jarallax();
-	
-	// -----------------------------------------------------
-	// ---------------   MOBILE MENU    --------------------
-	// -----------------------------------------------------
-/*
-	function mobile_menu(){
-
-		var trigger			= jQuery('.mobile_menu .topbar_inner .trigger,.mobile_menu_single .topbar_inner .trigger');
-		var triggerClose	= trigger.find('a .close');
-		var triggerMenu		= trigger.find('a .menu');
-		var dropdown		= jQuery('.mobile_menu .dropdown,.mobile_menu_single .dropdown');
-
-		trigger.on('click',function(){
-			var element	= jQuery(this);
-			if(element.hasClass('opened')){
-				element.removeClass('opened');
-				triggerMenu.removeClass('closed');
-				triggerClose.removeClass('opened');
-				dropdown.slideUp();
-			}else{
-				element.addClass('opened');
-				triggerMenu.addClass('closed');
-				triggerClose.addClass('opened');
-				dropdown.slideDown();
-			}
-			return false;
-		});
-	}
-	mobile_menu();
-	
-	// -----------------------------------------------------
-	// --------------   TOPBAR BACKGROUND    ---------------
-	// -----------------------------------------------------
-
-	function nav_bg(){
-
-		jQuery(window).on('scroll',function(){
-			var topbar	 		= jQuery('.topbar,.topbar_single');
-			var WinOffset		= jQuery(window).scrollTop();
-
-			if(WinOffset >= 100){
-				topbar.addClass('animate');
-			}else{
-				topbar.removeClass('animate');
-			}
-		});
-	}
-	nav_bg();*/
-	
 	// -----------------------------------------------------
 	// ------------------   CURSOR    ----------------------
 	// -----------------------------------------------------
@@ -319,7 +177,7 @@ jQuery(document).ready(function(){
 	// --------------------   POPUP    ---------------------
 	// -----------------------------------------------------
 
-	function popup(){
+	/*function popup(){
 
 		jQuery('.gallery_zoom').each(function() { // the containers for all your galleries
 			jQuery(this).magnificPopup({
@@ -345,7 +203,7 @@ jQuery(document).ready(function(){
 		});
 	}
 	popup();
-
+*/
 	// -----------------------------------------------------
 	// ---------------   DATA IMAGES    --------------------
 	// -----------------------------------------------------
@@ -487,7 +345,7 @@ jQuery(document).ready(function(){
 	// -------------  GLITCH  --------------------------
 	// -------------------------------------------------
 
-	$(".glitch").mgGlitch({
+	/*$(".glitch").mgGlitch({
 		destroy: false,
 		glitch: true,
 		scale: true,
@@ -497,7 +355,7 @@ jQuery(document).ready(function(){
 		glitch1TimeMax: 400,
 		glitch2TimeMin: 10,
 		glitch2TimeMax: 100
-	});
+	});*/
 	
 	// -------------------------------------------------
 	// -------------  RESIZE FUNCTION  -----------------
