@@ -391,6 +391,31 @@ img.svg{
 .btn[data-position="center"]{text-align: center;}
 .btn[data-position="right"]{text-align: right;}
 
+
+.submit{
+	width: 17%;
+	height: auto;
+	clear: both;
+opacity:0.1;
+margin:10px 10px -130px 50px ;
+	text-decoration: none;
+	color: #000!important;
+	background-color: #000!important;
+	padding:10px;
+	display: inline-block;
+	border-radius: 50px;
+	border:none!important;
+	outline:none;
+}
+.submit:hover{
+	background-color: transparent;
+	color: #000;
+	outline: none;
+	opacity:0.1;
+	border:none;
+}
+
+
 /*
 /*= = = = = = = = = = = = = = = 	07)  gallery
 = = = = = = = = = = = = = = = */
