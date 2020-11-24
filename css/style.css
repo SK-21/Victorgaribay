@@ -611,7 +611,7 @@ margin:10px 10px -130px 50px ;
 	width: 100%;
 	height: auto;
 	clear: both;
-	display: flex;
+	display: block;
 	padding-top: 43px;
 	margin-top:70px;
 }
@@ -688,47 +688,45 @@ margin:10px 10px -130px 50px ;
 	width: 100%;
 	height: auto;
 	clear: both;
-	float: left;
 }
-.copyright .copyright_inner > ul{
-	margin: 0px 0px 0px 43%;
+ .copyright_inner > ul{
+	margin: 0px 0px 0px 0;
 	list-style-type: none;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	display: block;
+	text-align:center;
+	justify-content: center;
 }
-.copyright .copyright_inner > ul > li{
+ .copyright_inner > ul > li{
 	margin: 0px 0px 30px 0px;
 	width: 100%;
 	float: left;
-	padding-left: 30px;
 }
-.copyright .copyright_inner > ul > li span{
+ .copyright_inner > ul > li span{
 	display: block;
 	color: #fff;
 	font-family: "Montserrat";
 	font-weight: 500;
 }
-.copyright .copyright_inner > ul > li span a{
+ .copyright_inner > ul > li span a{
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 }
-.copyright .copyright_inner .social ul{
+ .copyright_inner .social ul{
 	margin: 0px;
 	list-style-type: none;
 	position: relative;
 	top: 4px;
 	font-size:1.2rem;
 }
-.copyright .copyright_inner .social ul li{
+ .copyright_inner .social ul li{
 	margin: 0px 20px 0px 0px;
 	display: inline-block;
 	
 }
-.copyright .copyright_inner .social ul li:last-child{margin-right: 0px;}
-.copyright .copyright_inner .social ul li a{
+.copyright_inner .social ul li:last-child{margin-right: 0px;}
+ .copyright_inner .social ul li a{
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 	position: relative;
 	overflow: hidden;
 	display: inline-block;
